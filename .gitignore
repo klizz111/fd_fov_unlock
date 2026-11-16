@@ -39,3 +39,6 @@ desktop.ini
 
 # ---- 逆向过程目录整体不入库（派生数据，可由工具重建）
 analysis/
+
+# ---- 面板的定位缓存（含 pid 与裸堆地址，同一进程内有效，不入库）
+tools/pin_targets.json

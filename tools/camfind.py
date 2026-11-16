@@ -28,6 +28,8 @@ import os
 import struct
 import sys
 import time
+import threading
+from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import fdcommon as fd            # noqa: E402  共享偏移/内存原语
@@ -38,6 +40,7 @@ HEAP_LO, HEAP_HI = fd.HEAP_LO, fd.HEAP_HI
 FOV_OFF, AR_OFF = fd.OFF_FOV, fd.OFF_ASPECT
 PCM_FOV_OFF = fd.OFF_PCM_DEFAULT_FOV
 PCM_VIEWTARGET_OFF = fd.OFF_PCM_VIEWTARGET
+HEAD_LEN = fd.OFF_ASPECT + 4     # 读多少字节才够覆盖 FOV / AspectRatio / Class / Outer
 
 
 class MBI(ctypes.Structure):
@@ -95,6 +98,17 @@ def plausible_ptr(p):
     return HEAP_LO <= p <= HEAP_HI
 
 
+def is_private(h, addr):
+    """地址必须落在私有堆的可写页里（排除 exe/dll 的模块映像段）。"""
+    mbi = MBI()
+    if not k32.VirtualQueryEx(h, ctypes.c_void_p(addr), ctypes.byref(mbi),
+                              ctypes.sizeof(mbi)):
+        return False
+    if mbi.State != MEM_COMMIT or mbi.Type != MEM_PRIVATE:
+        return False
+    return (mbi.Protect & 0xFF) in WRITABLE
+
+
 def regions(h):
     addr, mbi = 0, MBI()
     while k32.VirtualQueryEx(h, ctypes.c_void_p(addr), ctypes.byref(mbi), ctypes.sizeof(mbi)):
@@ -112,10 +126,10 @@ def regions(h):
 
 def validate_camera(h, p):
     """按结构确认 p 是一个 CameraComponent。"""
-    if not plausible_ptr(p):
+    if not plausible_ptr(p) or not is_private(h, p):
         return None
-    head = read(h, p, 0x2A0)
-    if not head or len(head) < 0x2A0:
+    head = read(h, p, HEAD_LEN)
+    if not head or len(head) < HEAD_LEN:
         return None
     fov = f32(head, FOV_OFF)
     ar = f32(head, AR_OFF)
@@ -123,31 +137,61 @@ def validate_camera(h, p):
         return None
     if abs(ar - 1.777778) > 0.02:
         return None
-    cls = q64(head, 0x10)
-    outer = q64(head, 0x20)
+    cls = q64(head, fd.OFF_CLASS)
+    outer = q64(head, fd.OFF_OUTER)
     if not plausible_ptr(cls):
         return None
     return {"addr": p, "fov": fov, "aspect": ar, "class": cls, "outer": outer}
 
 
-def scan(h, verbose=False):
-    """一趟扫完：找出所有 CameraComponent 候选 + PlayerCameraManager。"""
-    cams, pcms = [], []
-    scanned = 0
-    CHUNK = 32 * 1024 * 1024
-    OVERLAP = 0x400
+def _iter_chunks(h, lo, hi, CHUNK=32 * 1024 * 1024, OVERLAP=0x400):
     for base, size in regions(h):
+        if lo is not None and base + size < lo:
+            continue
+        if hi is not None and base > hi:
+            break
         start = 0
         while start < size:
-            n = min(CHUNK + OVERLAP, size - start)
-            data = read(h, base + start, n)
-            if data:
-                scanned += len(data)
-                _scan_buf(h, base + start, data, cams, pcms)
+            yield base + start, min(CHUNK + OVERLAP, size - start)
             start += CHUNK
+
+
+def scan(h, verbose=False, lo=None, hi=None, throttle_ms=0, workers=8, stop_on_pcm=False):
+    """扫私有堆找 CameraComponent / PlayerCameraManager。
+    workers: 并行读内存的线程数（ctypes 调用会释放 GIL，能明显加速）。
+    stop_on_pcm: 一旦找到带合法 ViewTarget 的 PCM 就立刻停（之后可用 ViewTarget 快路径）。
+    """
+    cams, pcms = [], []
+    lock = threading.Lock()
+    stop = threading.Event()
+    scanned = [0]
+
+    def work(item):
+        base, n = item
+        if stop.is_set():
+            return
+        data = read(h, base, n)
+        if not data:
+            return
+        lc, lp = [], []
+        _scan_buf(h, base, data, lc, lp)
+        if throttle_ms:
+            time.sleep(throttle_ms / 1000.0)
+        if lc or lp:
+            with lock:
+                cams.extend(lc)
+                pcms.extend(lp)
+                scanned[0] += len(data)
+            if stop_on_pcm and any(plausible_ptr(p["viewtarget"]) for p in lp):
+                stop.set()
+
+    with ThreadPoolExecutor(max_workers=max(1, workers)) as ex:
+        list(ex.map(work, _iter_chunks(h, lo, hi)))
+
     if verbose:
-        print(f"# scanned {scanned/1024/1024:.0f} MB, cams={len(cams)} pcms={len(pcms)}",
+        print(f"# scanned {scanned[0]/1024/1024:.0f} MB, cams={len(cams)} pcms={len(pcms)}",
               file=sys.stderr)
+
     def uniq(rows, key="addr"):
         seen, out = set(), []
         for r in rows:
@@ -156,6 +200,7 @@ def scan(h, verbose=False):
             seen.add(r[key])
             out.append(r)
         return out
+
     return uniq(cams), uniq(pcms)
 
 
@@ -191,7 +236,7 @@ def probe_active(hw, cams, pcm, probe_value=31.7):
     这是最硬的判定：不依赖 outer/pawn 结构假设。写完立刻还原。"""
     if not pcm:
         return None, None
-    pov_addr = pcm["addr"] + 0x380
+    pov_addr = pcm["addr"] + fd.OFF_PCM_POV_FOV
     for c in cams:
         old = read(hw, c["addr"] + FOV_OFF, 4)
         if not old:
@@ -224,15 +269,15 @@ def components_of(h, actor, size=0x2000):
         p = q64(body, off)
         if not plausible_ptr(p) or p in seen:
             continue
-        head = read(h, p, 0x280)
+        head = read(h, p, HEAD_LEN)
         if not head:
             continue
         fov = f32(head, FOV_OFF)
-        cls = q64(head, 0x10)
+        cls = q64(head, fd.OFF_CLASS)
         if 5.0 <= fov <= 179.0 and plausible_ptr(cls):
             seen.add(p)
             out.append({"addr": p, "fov": fov, "aspect": f32(head, AR_OFF),
-                        "class": cls, "outer": q64(head, 0x20), "via": f"actor+0x{off:X}"})
+                        "class": cls, "outer": q64(head, fd.OFF_OUTER), "via": f"actor+0x{off:X}"})
     return out
 
 
@@ -241,7 +286,7 @@ def pick_active(h, cams, pcm):
     就是活跃相机。这条链是实测校准过的（87.93 与 PCM+0x380 完全一致）。"""
     if not pcm:
         return (cams[0] if cams else None), None, "no-pcm"
-    pov = read(h, pcm["addr"] + 0x380, 4)
+    pov = read(h, pcm["addr"] + fd.OFF_PCM_POV_FOV, 4)
     pov_fov = f32(pov, 0) if pov else None
     pawn = pcm["viewtarget"]
     if plausible_ptr(pawn):
@@ -315,3 +360,39 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+
+# ---------------------------------------------------------------- 快路径
+VT_OFF = fd.OFF_PCM_VIEWTARGET   # 别名：面板侧有引用（fd_cam_panel 用 camfind.VT_OFF）
+
+
+def cameras_from_viewtarget(h, pcms, size=0x6000):
+    """从 PCM 的 ViewTarget 角色对象里直接找相机组件，不扫整个堆（毫秒级）。"""
+    out = []
+    seen = set()
+    for pcm in pcms or []:
+        raw = read(h, pcm["addr"] + VT_OFF, 8)
+        vt = q64(raw, 0) if raw else 0
+        if not plausible_ptr(vt) or vt in seen:
+            continue
+        seen.add(vt)
+        data = read(h, vt, size)
+        if not data:
+            continue
+        for off in range(0, len(data) - 8, 8):
+            p = q64(data, off)
+            if not plausible_ptr(p) or p in seen:
+                continue
+            if not is_private(h, p):
+                continue
+            seen.add(p)
+            head = read(h, p, HEAD_LEN)
+            if not head:
+                continue
+            fov = f32(head, FOV_OFF)
+            ar = f32(head, AR_OFF)
+            if 5.0 <= fov <= 179.0 and 0.5 <= ar <= 3.0:
+                out.append({"addr": p, "fov": fov, "aspect": ar,
+                            "class": q64(head, fd.OFF_CLASS), "outer": q64(head, fd.OFF_OUTER),
+                            "vt": vt})
+    return out

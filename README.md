@@ -1,7 +1,7 @@
 # Fallen Doll — 相机 FOV / 垂直视角解锁工具包
 
-给 **Fallen Doll: Operation Lovecraft（Paralogue）** 用的进程外相机控制工具：
-解除摄影/自由相机那条「垂直视角」滑条 **20–90°** 的硬上限，并提供一个自带
+给 *Fallen Doll* 用的进程外相机控制工具：
+解除摄影/自由/第一人称相机那条「垂直视角」滑条 **20–90°** 的硬上限，并提供一个自带
 60–150° 滑条的常驻控制面板。
 
 **不注入 DLL，不修改游戏文件，不改 pak。** 全部通过 `ReadProcessMemory` /
@@ -53,7 +53,9 @@ tools/
   scan_names.py           离线扫 exe 里的 FName 池，找相机相关符号
 mod/FDCamDump/            UE4SS Lua mod：只取对象指针与类名（不碰属性，不崩）
 bats/                     UE4SS 开关脚本（可选路径用）
-相机面板.bat              Windows 双击启动面板
+启动面板.bat              Windows 双击启动面板（pythonw，无控制台）
+使用说明.txt              面向玩家的使用说明（热键、扫描行为、文件清单）
+tools/pin_targets.json    定位缓存（运行时生成，同一进程内复用；不入库）
 Install-FDCamDump.ps1     安装 UE4SS + FDCamDump mod（可选，只有想走 F6 快路径才需要）
 Uninstall-FDCamDump.ps1   移除 UE4SS
 Test-Launch.ps1           注入存活实验脚本（逐个开关 mod / hook）
@@ -104,10 +106,20 @@ python tools\memdump.py diff   --a before.bin --b after.bin
 
 ## 硬性限制（不是免责声明，是实测踩出来的）
 
-- **必须先处于自由相机 / 摄影界面**。否则 `ViewTarget` 上没有相机组件，自解析会退化成兜底匹配。
+- **必须先进入某个游戏画面**（自由相机 / 摄影 / 第一人称都行）。标题画面和菜单里 `ViewTarget` 为 0，工具会拒绝扫堆并提示。
 - 自解析要扫约 8 GB 私有堆，**30 秒左右**，期间游戏会明显卡顿。UE4SS manifest 路径是 0 秒。
 - 兜底匹配依赖相机 `+0x274` 的 16:9 AspectRatio 签名；改成非 16:9 分辨率会漏，主路径（ViewTarget）不受影响。
 - **大幅改值有风险**：把 SpringArm Length 从 200 直接写到 500 触发过断言崩溃（58.6 MB dmp）。FOV 90→150 实测安全，但仍建议小步长。
 - 偏移是 UE 5.7.4 Shipping 的参数，**游戏大版本更新后必须重测**（流程见技术文档第 8 节）。
+
+---
+
+## 致谢
+
+- **第一人称相机（FPV）的切换支持**：来自群友 **@Oxgen** 的贡献 —— 定位不再按名字过滤，
+  识别的相机会累积进 `pin_targets` 同时压值，配合 `PCM+0x380` 的 POV 闭环，
+  从自由相机切到第一人称后会自动跟上。
+- UE4SS 的 5.7 兼容性验证依赖 `v4.0.0-9-gb2d936b9` 这个 experimental 构建。
+
 
 ---

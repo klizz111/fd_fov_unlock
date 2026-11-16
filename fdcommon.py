@@ -35,7 +35,9 @@ BIN_SUBDIR = os.path.join("Paralogue", "Binaries", "Win64")
 ENV_GAME_DIR = "FDMOD_GAME_DIR"
 KIT_CONFIG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json")
 
-# ---- 偏移表
+# ---- 偏移表（唯一权威来源；其他文件一律引用这里的常量，不写字面量）
+OFF_CLASS = 0x10            # UObjectBase::ClassPrivate
+OFF_OUTER = 0x20            # UObjectBase::OuterPrivate
 OFF_FOV = 0x250
 OFF_ASPECT = 0x274
 OFF_PCM_DEFAULT_FOV = 0x2C8
@@ -65,15 +67,47 @@ PROC_QUERY_LIMITED_INFORMATION = 0x1000
 HEAP_LO, HEAP_HI = 0x10000, 0x7FFFFFFFFFFF
 
 
+def _iter_processes():
+    """纯 ctypes 枚举进程（不调 tasklist，不会弹控制台窗口）。"""
+    import ctypes.wintypes as wt
+    TH32CS_SNAPPROCESS = 0x2
+
+    class PROCESSENTRY32(ctypes.Structure):
+        _fields_ = [
+            ("dwSize", wt.DWORD), ("cntUsage", wt.DWORD), ("th32ProcessID", wt.DWORD),
+            ("th32DefaultHeapID", ctypes.POINTER(ctypes.c_ulong)), ("th32ModuleID", wt.DWORD),
+            ("cntThreads", wt.DWORD), ("th32ParentProcessID", wt.DWORD),
+            ("pcPriClassBase", ctypes.c_long), ("dwFlags", wt.DWORD),
+            ("szExeFile", ctypes.c_char * 260),
+        ]
+
+    k32i = ctypes.WinDLL("kernel32", use_last_error=True)
+    k32i.CreateToolhelp32Snapshot.restype = ctypes.c_void_p
+    k32i.CreateToolhelp32Snapshot.argtypes = [wt.DWORD, wt.DWORD]
+    k32i.Process32First.argtypes = [ctypes.c_void_p, ctypes.POINTER(PROCESSENTRY32)]
+    k32i.Process32Next.argtypes = [ctypes.c_void_p, ctypes.POINTER(PROCESSENTRY32)]
+    k32i.CloseHandle.argtypes = [ctypes.c_void_p]
+
+    snap = k32i.CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0)
+    if not snap or snap == ctypes.c_void_p(-1).value:
+        return
+    try:
+        pe = PROCESSENTRY32()
+        pe.dwSize = ctypes.sizeof(PROCESSENTRY32)
+        ok = k32i.Process32First(snap, ctypes.byref(pe))
+        while ok:
+            yield pe.th32ProcessID, pe.szExeFile.decode("mbcs", "replace")
+            ok = k32i.Process32Next(snap, ctypes.byref(pe))
+    finally:
+        k32i.CloseHandle(snap)
+
+
 def find_pid(exe_name=GAME_EXE):
-    r = subprocess.run(["tasklist", "/FI", f"IMAGENAME eq {exe_name}", "/FO", "CSV", "/NH"],
-                       capture_output=True, text=True)
-    for line in r.stdout.splitlines():
-        if exe_name.split(".")[0].lower() in line.lower():
-            try:
-                return int(line.split(",")[1].strip('"'))
-            except (IndexError, ValueError):
-                continue
+    """按进程名找 pid；不用 tasklist，不会弹控制台窗口。"""
+    want = exe_name.lower()
+    for pid, name in _iter_processes():
+        if name.lower() == want:
+            return pid
     return None
 
 
