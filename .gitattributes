@@ -1,0 +1,19 @@
+# Windows 脚本一律 CRLF：LF 的 .bat 会让 cmd.exe 逐行解析错乱
+# （实测 'ernal' is not recognized —— 见 docs/技术文档.md 坑 #6）
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+
+# Python / markdown / json 保持 LF，避免 git 在 Windows 上反复转换
+*.py    text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.lua   text eol=lf
+*.txt   text eol=lf
+
+# 二进制产物不参与换行转换
+*.dll   binary
+*.zip   binary
+*.pak   binary
+*.bin   binary
+*.dmp   binary

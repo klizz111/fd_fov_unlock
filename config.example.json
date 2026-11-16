@@ -1,0 +1,8 @@
+{
+  "_comment": "复制为 config.json 后填写自己的路径；也可以不改这里，改用环境变量 FDMOD_GAME_DIR，或给每个工具传 --game-dir",
+  "game_dir": "X:\\Path\\To\\FallenDoll",
+  "notes": {
+    "game_dir": "游戏根目录，即包含 Paralogue\\ 和 Engine\\ 的那一层",
+    "objects_manifest": "可选。UE4SS 的 F6 manifest 会生成在 <game_dir>\\Paralogue\\Binaries\\Win64\\FDCamDump\\objects.txt；没有也能跑，工具会退化成自解析 camfind（约 30 秒）"
+  }
+}

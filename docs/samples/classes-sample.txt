@@ -1,0 +1,526 @@
+FDCamDump v3 class sweep  (no FProperty access)
+[Actor] instances=839
+[ActorComponent] instances=1917
+[SceneComponent] instances=1783
+
+=== distinct classes: 260  (objects walked: 4539) ===
+1      ASClass /Script/Angelscript.A_AvatarPawn
+        e.g. A_AvatarPawn /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_AvatarPawn_2147477848
+1      ASClass /Script/Angelscript.A_BPHudRoom
+        e.g. A_BPHudRoom /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_BPHudRoom_2147477849
+2      ASClass /Script/Angelscript.A_BP_Bed
+        e.g. A_BP_Bed /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.A_BP_Bed_0
+1      ASClass /Script/Angelscript.A_BP_DetectFPS
+        e.g. A_BP_DetectFPS /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_BP_DetectFPS_2147473510
+1      ASClass /Script/Angelscript.A_BP_MoveToOtherMap
+        e.g. A_BP_MoveToOtherMap /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.A_BP_MoveToOtherMap_0
+1      ASClass /Script/Angelscript.A_BattlePassManager
+        e.g. A_BattlePassManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_BattlePassManager_2147475966
+1      ASClass /Script/Angelscript.A_CameraHUDManager
+        e.g. A_CameraHUDManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_CameraHUDManager_2147477610
+2      ASClass /Script/Angelscript.A_Card3D
+        e.g. A_Card3D /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_Card3D_2147477586
+1      ASClass /Script/Angelscript.A_CardsManager
+        e.g. A_CardsManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_CardsManager_2147476089
+1      ASClass /Script/Angelscript.A_ChangeRoomManager
+        e.g. A_ChangeRoomManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ChangeRoomManager_2147477573
+1      ASClass /Script/Angelscript.A_ChangeSuitEffectActor2
+        e.g. A_ChangeSuitEffectActor2 /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ChangeSuitEffectActor2_2147472864
+4      ASClass /Script/Angelscript.A_CharacterDisplayComp
+        e.g. A_CharacterDisplayComp /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.A_CharacterDisplayComp_2147477830
+1      ASClass /Script/Angelscript.A_ClientHController
+        e.g. A_ClientHController /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ClientHController_2147474288
+1      ASClass /Script/Angelscript.A_ClientHManager
+        e.g. A_ClientHManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ClientHManager_2147474289
+1      ASClass /Script/Angelscript.A_ClientHPreviewManager
+        e.g. A_ClientHPreviewManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ClientHPreviewManager_2147473929
+1      ASClass /Script/Angelscript.A_ClientHSelectManager
+        e.g. A_ClientHSelectManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ClientHSelectManager_2147473918
+1      ASClass /Script/Angelscript.A_CustomManager
+        e.g. A_CustomManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_CustomManager_2147477703
+1      ASClass /Script/Angelscript.A_DanceManager
+        e.g. A_DanceManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_DanceManager_2147477638
+2      ASClass /Script/Angelscript.A_DummyActor
+        e.g. A_DummyActor /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.A_DummyActor_0
+2      ASClass /Script/Angelscript.A_DummyHPerformer
+        e.g. A_DummyHPerformer /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.A_DummyHPerformer_2147477831
+1      ASClass /Script/Angelscript.A_FreeCameraPawn
+        e.g. A_FreeCameraPawn /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_FreeCameraPawn_2147477713
+1      ASClass /Script/Angelscript.A_GM_Room
+        e.g. A_GM_Room /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_GM_Room_2147477998
+1      ASClass /Script/Angelscript.A_HPerformer
+        e.g. A_HPerformer /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_HPerformer_2147474313
+1      ASClass /Script/Angelscript.A_HallPostProcess
+        e.g. A_HallPostProcess /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_HallPostProcess_2147475330
+1      ASClass /Script/Angelscript.A_HangUpDeviceManager
+        e.g. A_HangUpDeviceManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_HangUpDeviceManager_2147477735
+1      ASClass /Script/Angelscript.A_MailManager
+        e.g. A_MailManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_MailManager_2147477702
+1      ASClass /Script/Angelscript.A_MatchManager
+        e.g. A_MatchManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_MatchManager_2147475328
+1      ASClass /Script/Angelscript.A_OnHookManager
+        e.g. A_OnHookManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_OnHookManager_2147477611
+1      ASClass /Script/Angelscript.A_OpBedManager
+        e.g. A_OpBedManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_OpBedManager_2147477659
+1      ASClass /Script/Angelscript.A_PacksManager
+        e.g. A_PacksManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_PacksManager_2147476088
+1      ASClass /Script/Angelscript.A_ParalogueGameSession
+        e.g. A_ParalogueGameSession /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ParalogueGameSession_2147477872
+1      ASClass /Script/Angelscript.A_PawnModeManager
+        e.g. A_PawnModeManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_PawnModeManager_2147477709
+1      ASClass /Script/Angelscript.A_PlayerData
+        e.g. A_PlayerData /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_PlayerData_2147477855
+1      ASClass /Script/Angelscript.A_PlayerListManager
+        e.g. A_PlayerListManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_PlayerListManager_2147473509
+1      ASClass /Script/Angelscript.A_PopUpManager
+        e.g. A_PopUpManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_PopUpManager_2147477675
+1      ASClass /Script/Angelscript.A_PreviewCharacterManager
+        e.g. A_PreviewCharacterManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_PreviewCharacterManager_2147476472
+1      ASClass /Script/Angelscript.A_RequestManager
+        e.g. A_RequestManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_RequestManager_2147473637
+1      ASClass /Script/Angelscript.A_RewardDialogManager
+        e.g. A_RewardDialogManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_RewardDialogManager_2147477674
+1      ASClass /Script/Angelscript.A_RoomData
+        e.g. A_RoomData /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_RoomData_2147477869
+1      ASClass /Script/Angelscript.A_RoomGamepadInputHandler
+        e.g. A_RoomGamepadInputHandler /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_RoomGamepadInputHandler_2147474873
+1      ASClass /Script/Angelscript.A_RoomManager
+        e.g. A_RoomManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_RoomManager_2147477856
+1      ASClass /Script/Angelscript.A_ServerHBuffManager
+        e.g. A_ServerHBuffManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ServerHBuffManager_2147474305
+1      ASClass /Script/Angelscript.A_ServerHDataManager
+        e.g. A_ServerHDataManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ServerHDataManager_2147474309
+1      ASClass /Script/Angelscript.A_ServerHDummyFlowManager
+        e.g. A_ServerHDummyFlowManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ServerHDummyFlowManager_2147474307
+1      ASClass /Script/Angelscript.A_ServerHFlowManager
+        e.g. A_ServerHFlowManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ServerHFlowManager_2147474306
+1      ASClass /Script/Angelscript.A_ServerHManager
+        e.g. A_ServerHManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ServerHManager_2147474310
+1      ASClass /Script/Angelscript.A_ServerHStatsManager
+        e.g. A_ServerHStatsManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ServerHStatsManager_2147474308
+1      ASClass /Script/Angelscript.A_ServerRoomManager
+        e.g. A_ServerRoomManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ServerRoomManager_2147474874
+1      ASClass /Script/Angelscript.A_SitManager
+        e.g. A_SitManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_SitManager_2147477673
+1      ASClass /Script/Angelscript.U_AC_AdaVoiceManager
+        e.g. U_AC_AdaVoiceManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.AvatarPawn_C_2147474303.U_AC_AdaVoiceManager_2147472865
+2      ASClass /Script/Angelscript.U_AC_CameraLocationManager
+        e.g. U_AC_CameraLocationManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_AvatarPawn_2147477848.AC_CameraLocationManager
+2      ASClass /Script/Angelscript.U_AC_IndexPoint
+        e.g. U_AC_IndexPoint /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_CameraHUDManager_2147477610.IndexPoint
+22     ASClass /Script/Angelscript.U_AC_ItemFlag
+        e.g. U_AC_ItemFlag /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.StaticMesh_workshoparm_Blueprint_C_1.U_AC_ItemFlag
+1      ASClass /Script/Angelscript.U_AC_Suit_Ada
+        e.g. U_AC_Suit_Ada /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.AvatarPawn_C_2147474303.U_AC_Suit_Ada_2147472914
+7      ASClass /Script/Angelscript.U_AC_WallTag
+        e.g. U_AC_WallTag /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_FrontWall3.AC_WallTag
+1      ASClass /Script/Angelscript.U_ClientHCameraCom
+        e.g. U_ClientHCameraCom /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ClientHController_2147474288.CameraComp
+1      ASClass /Script/Angelscript.U_ClientHPovCom
+        e.g. U_ClientHPovCom /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ClientHController_2147474288.PovComp
+1      ASClass /Script/Angelscript.U_ClientHSpeedCom
+        e.g. U_ClientHSpeedCom /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ClientHController_2147474288.SpeedComp
+1      ASClass /Script/Angelscript.U_ClientHUICom
+        e.g. U_ClientHUICom /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ClientHController_2147474288.UIComp
+1      ASClass /Script/Angelscript.U_CursorManager
+        e.g. U_CursorManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_RoomManager_2147477856.CursorManager
+2      ASClass /Script/Angelscript.U_DataManager
+        e.g. U_DataManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_RoomManager_2147477856.DataManager
+4      ASClass /Script/Angelscript.U_DefaultViewComp
+        e.g. U_DefaultViewComp /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.A_BP_Bed_0.DefaultViewComp
+1      ASClass /Script/Angelscript.U_DummyPositionSelector
+        e.g. U_DummyPositionSelector /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_RoomManager_2147477856.DummyPositionSelector
+1      ASClass /Script/Angelscript.U_HStateManager
+        e.g. U_HStateManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_ClientHController_2147474288.StateManager
+2      ASClass /Script/Angelscript.U_PoolBodyBubblesComponent
+        e.g. U_PoolBodyBubblesComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_AvatarPawn_2147477848.PoolBodyBubbles
+2      ASClass /Script/Angelscript.U_SettingFlowCom
+        e.g. U_SettingFlowCom /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_RoomManager_2147477856.SettingFlowCom
+3      BlueprintGeneratedClass /Game/Asset/Blueprints/BP_Security_Camera_Tracking.BP_Security_Camera_Tracking_C
+        e.g. BP_Security_Camera_Tracking_C /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.BP_Security_Camera_Tracking2
+6      BlueprintGeneratedClass /Game/Asset/Blueprints/BP_Security_Flashing_Alarm.BP_Security_Flashing_Alarm_C
+        e.g. BP_Security_Flashing_Alarm_C /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.BP_Security_Flashing_Alarm2
+1      BlueprintGeneratedClass /Game/Asset/Item/Syringe/BP_Syringe_SK.BP_Syringe_SK_C
+        e.g. BP_Syringe_SK_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_Syringe_0
+1      BlueprintGeneratedClass /Game/Asset/PanelConstrolsPack/BP/BP_12x24_16_1.BP_12x24_16_1_C
+        e.g. BP_12x24_16_1_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.BP_12x24_16_1
+1      BlueprintGeneratedClass /Game/Asset/PanelConstrolsPack/BP/BP_12x24_17_1.BP_12x24_17_1_C
+        e.g. BP_12x24_17_1_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.BP_12x24_17_1
+1      BlueprintGeneratedClass /Game/Asset/PanelConstrolsPack/BP/BP_48x48_1_1.BP_48x48_1_1_C
+        e.g. BP_48x48_1_1_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.BP_48x48_1_1
+1      BlueprintGeneratedClass /Game/Asset/PanelConstrolsPack/BP/BP_HandleKey2_1.BP_HandleKey2_1_C
+        e.g. BP_HandleKey2_1_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.BP_HandleKey2_2
+1      BlueprintGeneratedClass /Game/Asset/PanelConstrolsPack/BP/BP_PanelButton1_1.BP_PanelButton1_1_C
+        e.g. BP_PanelButton1_1_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.BP_PanelButton1_1
+1      BlueprintGeneratedClass /Game/Asset/PanelConstrolsPack/BP/BP_card1_1.BP_card1_1_C
+        e.g. BP_card1_1_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.BP_card1_1
+1      BlueprintGeneratedClass /Game/Asset/PanelConstrolsPack/BP/BP_monitor2_1.BP_monitor2_1_C
+        e.g. BP_monitor2_1_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.BP_monitor2_2
+1      BlueprintGeneratedClass /Game/Asset/PanelConstrolsPack/BP/BP_tabletespecial3_1.BP_tabletespecial3_1_C
+        e.g. BP_tabletespecial3_1_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.BP_tabletespecial3_2
+1      BlueprintGeneratedClass /Game/Asset/PanelConstrolsPack/BP/BP_tabletespecial5_1.BP_tabletespecial5_1_C
+        e.g. BP_tabletespecial5_1_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.BP_tabletespecial5_1
+56     BlueprintGeneratedClass /Game/BP/AirWall.AirWall_C
+        e.g. AirWall_C /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.AirWall10
+5      BlueprintGeneratedClass /Game/BP/NoHZone_2.NoHZone_2_C
+        e.g. NoHZone_2_C /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.Box_10
+1      BlueprintGeneratedClass /Game/BP/SettingCom.SettingCom_C
+        e.g. SettingCom_C /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.SettingCom_2
+1      BlueprintGeneratedClass /Game/Characters/Item/WorkshopArm/BP_WorkshopArm2_SK.BP_WorkshopArm2_SK_C
+        e.g. BP_WorkshopArm2_SK_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.Mesh_WorkshopArm2_2
+12     BlueprintGeneratedClass /Game/Common/BPTools/Volumes/BP_DFAOVolume.BP_DFAOVolume_C
+        e.g. BP_DFAOVolume_C /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.BP_DFAOVolume_C_1
+1      BlueprintGeneratedClass /Game/Core/BP/H/SelectModeActor.SelectModeActor_C
+        e.g. SelectModeActor_C /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.SelectModeActor_C_0
+1      BlueprintGeneratedClass /Game/Core/BP/Player/AvatarPawn.AvatarPawn_C
+        e.g. AvatarPawn_C /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.AvatarPawn_C_2147474303
+30     BlueprintGeneratedClass /Game/Core/BP/Scene/WallBox.WallBox_C
+        e.g. WallBox_C /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.WallBox10
+1      BlueprintGeneratedClass /Game/Core/GUI/BattlePass/BluePrint/3DRole.3DRole_C
+        e.g. 3DRole_C /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.3DRole_C_2147475440
+1      BlueprintGeneratedClass /Game/Core/GUI/BattlePass/BluePrint/BattlePassCam.BattlePassCam_C
+        e.g. BattlePassCam_C /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.BattlePassCam_C_2147475331
+1      BlueprintGeneratedClass /Game/Core/Map/Room_CircleRoom.Room_CircleRoom_C
+        e.g. Room_CircleRoom_C /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.Room_CircleRoom_C_2
+1      BlueprintGeneratedClass /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc_C
+        e.g. CircleRoomMisc_C /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.CircleRoomMisc_C_1
+1      BlueprintGeneratedClass /Game/Equipment/Prefabs/Mesh_SMG.Mesh_SMG_C
+        e.g. Mesh_SMG_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.Mesh_P90Mod11
+1      BlueprintGeneratedClass /Game/FDBattleEnvContent/VFX/FluidFlux/Environment/Readback/BP_FluxDataComponent.BP_FluxDataComponent_C
+        e.g. BP_FluxDataComponent_C /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.AvatarPawn_C_2147474303.BP_FluxDataComponent
+1      BlueprintGeneratedClass /Game/FDBattleEnvContent/VFX/FluidFlux/Interaction/Blueprints/BP_FluxInteractionComponent.BP_FluxInteractionComponent_C
+        e.g. BP_FluxInteractionComponent_C /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.AvatarPawn_C_2147474303.BP_FluxInteractionComponent
+5      BlueprintGeneratedClass /Game/Levels/BluePrint/BP_FloatingObject.BP_FloatingObject_C
+        e.g. BP_FloatingObject_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.NewBlueprint2
+3      BlueprintGeneratedClass /Game/Levels/BluePrint/BP_SciFi_Door_C.BP_SciFi_Door_C_C
+        e.g. BP_SciFi_Door_C_C /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.BP_SciFi_Door_C2
+6      BlueprintGeneratedClass /Game/Levels/CircleRoom/BluePrint/BP_ChannelRoomDoor.BP_ChannelRoomDoor_C
+        e.g. BP_ChannelRoomDoor_C /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.BP_ChannelRoomDoor_C_1
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/BluePrint/BP_SlidingDoor.BP_SlidingDoor_C
+        e.g. BP_SlidingDoor_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.BP_SlidingDoor_C_0
+9      BlueprintGeneratedClass /Game/Levels/CircleRoom/BluePrint/HUD_DoorSign.HUD_DoorSign_C
+        e.g. HUD_DoorSign_C /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.HUD_DoorSign10
+3      BlueprintGeneratedClass /Game/Levels/CircleRoom/BluePrint/Mesh_ChannelRoom_Blueprint.Mesh_ChannelRoom_Blueprint_C
+        e.g. Mesh_ChannelRoom_Blueprint_C /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.Mesh_ChannelRoom_Blueprint
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/BluePrint/Mesh_Elevator_Blueprint.Mesh_Elevator_Blueprint_C
+        e.g. Mesh_Elevator_Blueprint_C /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.Mesh_Elevator_Blueprint3
+4      BlueprintGeneratedClass /Game/Levels/CircleRoom/BluePrint/Mesh_XRBContainer_Blueprint1.Mesh_XRBContainer_Blueprint1_C
+        e.g. Mesh_XRBContainer_Blueprint1_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_XRBContainer_Blueprint1
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Bridge1.Bridge1_C
+        e.g. Bridge1_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Bridge1_C_0
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Env.Env_C
+        e.g. Env_C /Game/Levels/CircleRoom/Env.Env:PersistentLevel.Env_C_0
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Lab.Lab_C
+        e.g. Lab_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Lab_C_1
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Club_Syringe.Club_Syringe_C
+        e.g. Club_Syringe_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Club_Syringe_C_0
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/LabTrayA.LabTrayA_C
+        e.g. LabTrayA_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.LabTrayA
+3      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_AirLockSideWallDeviceB.Mesh_AirLockSideWallDeviceB_C
+        e.g. Mesh_AirLockSideWallDeviceB_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_AirLockSideWallDeviceB_2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_AirLockSideWallPanel.Mesh_AirLockSideWallPanel_C
+        e.g. Mesh_AirLockSideWallPanel_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.Mesh_AirLockSideWallPanel_13
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_BackWall.Mesh_BackWall_C
+        e.g. Mesh_BackWall_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_CircleRoomFloor11
+3      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_BioTube.Mesh_BioTube_C
+        e.g. Mesh_BioTube_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_BioTube2_10
+6      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_BorderWall.Mesh_BorderWall_C
+        e.g. Mesh_BorderWall_C /Game/Levels/CircleRoom/Elevator.Elevator:PersistentLevel.Mesh_RoomSpacer16
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_BridgeInnerWall.Mesh_BridgeInnerWall_C
+        e.g. Mesh_BridgeInnerWall_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.Mesh_XRBInnerWall2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_Bridge_ControlDesk_1.Mesh_Bridge_ControlDesk_1_C
+        e.g. Mesh_Bridge_ControlDesk_1_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_Bridge_ControlDesk_backup_2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_Bridge_SideDevice01.Mesh_Bridge_SideDevice01_C
+        e.g. Mesh_Bridge_SideDevice01_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_Props_6_3
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_Bridge_SideDevice02.Mesh_Bridge_SideDevice02_C
+        e.g. Mesh_Bridge_SideDevice02_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_Props_5_2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_CNCMachine.Mesh_CNCMachine_C
+        e.g. Mesh_CNCMachine_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.Mesh_SFCrateOR_0
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_CenterCeilB.Mesh_CenterCeilB_C
+        e.g. Mesh_CenterCeilB_C /Game/Levels/CircleRoom/Elevator.Elevator:PersistentLevel.Mesh_RoomSpacer15
+3      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_ChannelRoomCeil.Mesh_ChannelRoomCeil_C
+        e.g. Mesh_ChannelRoomCeil_C /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.Mesh_ChannelRoomCeil2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_ChannelRoom_WallPlane_2.Mesh_ChannelRoom_WallPlane_2_C
+        e.g. Mesh_ChannelRoom_WallPlane_2_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_ChannelRoom_WallPlane_2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_CircleBase.Mesh_CircleBase_C
+        e.g. Mesh_CircleBase_C /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.Mesh_CircleBase_59
+3      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_ControlChair.Mesh_ControlChair_C
+        e.g. Mesh_ControlChair_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_ControlChair2
+3      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_ControlChair_Ring.Mesh_ControlChair_Ring_C
+        e.g. Mesh_ControlChair_Ring_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_ControlChair_Ring2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_ControlDesk.Mesh_ControlDesk_C
+        e.g. Mesh_ControlDesk_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_ControlDesk_5
+4      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_Countdown.Mesh_Countdown_C
+        e.g. Mesh_Countdown_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_Countdown2
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_DeviceA.Mesh_DeviceA_C
+        e.g. Mesh_DeviceA_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_DeviceA2_6
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_DeviceB.Mesh_DeviceB_C
+        e.g. Mesh_DeviceB_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_DeviceB2
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_Dummy_decals.Mesh_Dummy_decals_C
+        e.g. Mesh_Dummy_decals_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_Dummy_decals2
+4      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_Elevator_Frame.Mesh_Elevator_Frame_C
+        e.g. Mesh_Elevator_Frame_C /Game/Levels/CircleRoom/Elevator.Elevator:PersistentLevel.Mesh_Elevator_Frame2_1
+5      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_Elevator_Rail.Mesh_Elevator_Rail_C
+        e.g. Mesh_Elevator_Rail_C /Game/Levels/CircleRoom/Elevator.Elevator:PersistentLevel.Mesh_Elevator_Rail4
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_HangLightA.Mesh_HangLightA_C
+        e.g. Mesh_HangLightA_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_HangLightA_2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_LabContainerA.Mesh_LabContainerA_C
+        e.g. Mesh_LabContainerA_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_LabContainerA2_10
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_LabContainerB.Mesh_LabContainerB_C
+        e.g. Mesh_LabContainerB_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_LabContainerB2_8
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_LabDesk.Mesh_LabDesk_C
+        e.g. Mesh_LabDesk_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_LabDesk_9
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_LightTri.Mesh_LightTri_C
+        e.g. Mesh_LightTri_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_LightTri_8
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_MIBCenterWall.Mesh_MIBCenterWall_C
+        e.g. Mesh_MIBCenterWall_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_MIBCenterWall_12
+6      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_MIBLightSide9_Blueprint.Mesh_MIBLightSide9_Blueprint_C
+        e.g. Mesh_MIBLightSide9_Blueprint_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.Mesh_MIBLightSide9_Blueprint12
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_MIBSideWall.Mesh_MIBSideWall_C
+        e.g. Mesh_MIBSideWall_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_CircleRoomFloor4
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_MedicMachine.Mesh_MedicMachine_C
+        e.g. Mesh_MedicMachine_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_MedicMachine_2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_MicroScope.Mesh_MicroScope_C
+        e.g. Mesh_MicroScope_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_MicroScope_7
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_MidWall.Mesh_MidWall_C
+        e.g. Mesh_MidWall_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_MidWall2
+3      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_OEBEquipmentShelf.Mesh_OEBEquipmentShelf_C
+        e.g. Mesh_OEBEquipmentShelf_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.OEB_EquipmentShelf2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_OEBPrinter.Mesh_OEBPrinter_C
+        e.g. Mesh_OEBPrinter_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.OEB_EquipmentOutput_5
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_OEBPrinterHead.Mesh_OEBPrinterHead_C
+        e.g. Mesh_OEBPrinterHead_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.OEB_EquipmentOutput2
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_OEBShowStand.Mesh_OEBShowStand_C
+        e.g. Mesh_OEBShowStand_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_OEBShowStand2
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_OEBShowStand_Ring.Mesh_OEBShowStand_Ring_C
+        e.g. Mesh_OEBShowStand_Ring_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_OEBShowStand_Ring2
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_OEBWeaponStand.Mesh_OEBWeaponStand_C
+        e.g. Mesh_OEBWeaponStand_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.Mesh_OEBWeaponStand2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_PianoChair_Ring.Mesh_PianoChair_Ring_C
+        e.g. Mesh_PianoChair_Ring_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_PianoChair_Ring_2
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_PlugA.Mesh_PlugA_C
+        e.g. Mesh_PlugA_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Plug5
+4      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_PlugB.Mesh_PlugB_C
+        e.g. Mesh_PlugB_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Plug4_1
+4      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_Projector_Blueprint.Mesh_Projector_Blueprint_C
+        e.g. Mesh_Projector_Blueprint_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_Projector_Blueprint
+8      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_Props_2.Mesh_Props_2_C
+        e.g. Mesh_Props_2_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_Props_4_1
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_Props_4.Mesh_Props_4_C
+        e.g. Mesh_Props_4_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_Props_2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_QEBControl.Mesh_QEBControl_C
+        e.g. Mesh_QEBControl_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.Mesh_QEBControl_2
+6      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_SideDoor.Mesh_SideDoor_C
+        e.g. Mesh_SideDoor_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_SideDoor13
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_SideTable.Mesh_SideTable_C
+        e.g. Mesh_SideTable_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.SideTable_4
+4      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_TestZoneDevice.Mesh_TestZoneDevice_C
+        e.g. Mesh_TestZoneDevice_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_TestZoneDevice2
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_WallBoxA.Mesh_WallBoxA_C
+        e.g. Mesh_WallBoxA_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.WallBox_31
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_WallBoxB.Mesh_WallBoxB_C
+        e.g. Mesh_WallBoxB_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.WallBox2
+5      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_WallCan.Mesh_WallCan_C
+        e.g. Mesh_WallCan_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.WallBox6_6
+4      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_WallCanB.Mesh_WallCanB_C
+        e.g. Mesh_WallCanB_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.WallDevice11
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_WallDeviceA.Mesh_WallDeviceA_C
+        e.g. Mesh_WallDeviceA_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.WallDevice5_8
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_WorkshopPlatform.Mesh_WorkshopPlatform_C
+        e.g. Mesh_WorkshopPlatform_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.Mesh_WorkshopPlatform2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_XRBCenterDevice.Mesh_XRBCenterDevice_C
+        e.g. Mesh_XRBCenterDevice_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_CircleRoomFloor9
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_XRBWorkDesk.Mesh_XRBWorkDesk_C
+        e.g. Mesh_XRBWorkDesk_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.XRB_WorkDesk_2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/Mesh_bridge_Blackfloor.Mesh_bridge_Blackfloor_C
+        e.g. Mesh_bridge_Blackfloor_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.3_10
+4      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/SM_Light_A1_5X1_N.SM_Light_A1_5X1_N_C
+        e.g. SM_Light_A1_5X1_N_C /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.SM_Light_A1_5X1_N2_5
+8      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/SM_VentilationBig_A1_Grid_4x4_N.SM_VentilationBig_A1_Grid_4x4_N_C
+        e.g. SM_VentilationBig_A1_Grid_4x4_N_C /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.SM_VentilationBig_A1_Grid_4x4_N2
+2      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/StaticMesh_workshoparm_Blueprint.StaticMesh_workshoparm_Blueprint_C
+        e.g. StaticMesh_workshoparm_Blueprint_C /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.StaticMesh_workshoparm_Blueprint_C_1
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_BackWallB.Mesh_BackWallB_C
+        e.g. Mesh_BackWallB_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_CircleRoomFloor7
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_BridgeFloor_01.Mesh_BridgeFloor_01_C
+        e.g. Mesh_BridgeFloor_01_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_BridgeFloor_4
+3      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_FrontWall_01.Mesh_FrontWall_01_C
+        e.g. Mesh_FrontWall_01_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_FrontWall3
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_MIBCeil_01.Mesh_MIBCeil_01_C
+        e.g. Mesh_MIBCeil_01_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_CircleRoomFloor3
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_OEBCeil_01.Mesh_OEBCeil_01_C
+        e.g. Mesh_OEBCeil_01_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.Mesh_CircleRoomFloor12
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_ScreenGlass_01.Mesh_ScreenGlass_01_C
+        e.g. Mesh_ScreenGlass_01_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_CircleRoomFloor14_0
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_Shell_F0_01.Mesh_Shell_F0_01_C
+        e.g. Mesh_Shell_F0_01_C /Game/Levels/CircleRoom/Shell.Shell:PersistentLevel.Mesh_Shell_F0_0
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_Shell_F1Ceil.Mesh_Shell_F1Ceil_C
+        e.g. Mesh_Shell_F1Ceil_C /Game/Levels/CircleRoom/Shell.Shell:PersistentLevel.Mesh_Shell_F1Ceil2_2
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_Shell_F1_01.Mesh_Shell_F1_01_C
+        e.g. Mesh_Shell_F1_01_C /Game/Levels/CircleRoom/Shell.Shell:PersistentLevel.Mesh_Shell_F1_8
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_Shell_F2Ceil.Mesh_Shell_F2Ceil_C
+        e.g. Mesh_Shell_F2Ceil_C /Game/Levels/CircleRoom/Shell.Shell:PersistentLevel.Mesh_Shell_F2Ceil_14
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_Shell_F2_01.Mesh_Shell_F2_01_C
+        e.g. Mesh_Shell_F2_01_C /Game/Levels/CircleRoom/Shell.Shell:PersistentLevel.Mesh_Shell_F2_12
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_WorkShopFloor_01.Mesh_WorkShopFloor_01_C
+        e.g. Mesh_WorkShopFloor_01_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.Mesh_CircleRoomFloor10
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_XRBCeil_01.Mesh_XRBCeil_01_C
+        e.g. Mesh_XRBCeil_01_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_CircleRoomFloor8
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_XRBFloor_01.Mesh_XRBFloor_01_C
+        e.g. Mesh_XRBFloor_01_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_CircleRoomFloor6
+4      BlueprintGeneratedClass /Game/Levels/CircleRoom/Prefab/wall/Mesh_XRBInnerWall.Mesh_XRBInnerWall_C
+        e.g. Mesh_XRBInnerWall_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_SideDoor17_12
+1      BlueprintGeneratedClass /Game/Levels/CircleRoom/Workshop.Workshop_C
+        e.g. Workshop_C /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.Workshop_C_2
+1      BlueprintGeneratedClass /Game/Levels/Star/BluePrint/BP_Yuggoth.BP_Yuggoth_C
+        e.g. BP_Yuggoth_C /Game/Levels/CircleRoom/Env.Env:PersistentLevel.BP_Yuggoth_2
+1      BlueprintGeneratedClass /Game/Multiplayer/BP/HM_TestPlace.HM_TestPlace_C
+        e.g. HM_TestPlace_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_Bed_2.HM_TestPlace
+1      BlueprintGeneratedClass /Game/Multiplayer/BP/Place/HM_RayCheck.HM_RayCheck_C
+        e.g. HM_RayCheck_C /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.Mesh_Bed_2.HM_RayCheck
+1      BlueprintGeneratedClass /Game/Multiplayer/BP/Place/HM_TransparentWall.HM_TransparentWall_C
+        e.g. HM_TransparentWall_C /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.Box_0.HM_TransparentWall
+2      BlueprintGeneratedClass /Game/VFX/PlayLiquidAnim/BP_LiquidAnim.BP_LiquidAnim_C
+        e.g. BP_LiquidAnim_C /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.BP_LiquidAnim_C_2147477734
+13     BlueprintGeneratedClass /Game/VRContent/Blueprints/Main/UI/VR_Actor_Click.VR_Actor_Click_C
+        e.g. VR_Actor_Click_C /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.VR_ClickComp_VR_Actor_Click_C_CAT_0
+4      Class /Script/ActorSequence.ActorSequenceComponent
+        e.g. ActorSequenceComponent /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.BP_Security_Camera_Tracking2.ActorSequence
+1      Class /Script/Engine.AmbientSound
+        e.g. AmbientSound /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.Amb_workshop_2
+6      Class /Script/Engine.ArrowComponent
+        e.g. ArrowComponent /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.BP_Security_Camera_Tracking2.Actor Base
+18     Class /Script/Engine.AudioComponent
+        e.g. AudioComponent /Engine/Transient.AudioComponent_2147478050
+2      Class /Script/Engine.AudioVolume
+        e.g. AudioVolume /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.AudioVolume3
+12     Class /Script/Engine.BillboardComponent
+        e.g. BillboardComponent /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.Mesh_ChannelRoom_Blueprint.AttachPosition
+13     Class /Script/Engine.BlockingVolume
+        e.g. BlockingVolume /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.BlockingVolume2
+288    Class /Script/Engine.BoxComponent
+        e.g. BoxComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.BP_DFAOVolume_C_1.Box
+40     Class /Script/Engine.BrushComponent
+        e.g. BrushComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.AudioVolume3.BrushComponent0
+12     Class /Script/Engine.CameraComponent
+        e.g. CameraComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_FreeCameraPawn_2147477713.Camera
+2      Class /Script/Engine.CameraShakeSourceComponent
+        e.g. CameraShakeSourceComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_FreeCameraPawn_2147477713.CameraShakeSource
+44     Class /Script/Engine.CapsuleComponent
+        e.g. CapsuleComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.PlayerStart10.CollisionCapsule
+40     Class /Script/Engine.ChildActorComponent
+        e.g. ChildActorComponent /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.BP_SlidingDoor_C_0.VR_ClickComp
+79     Class /Script/Engine.DecalActor
+        e.g. DecalActor /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.Decal_TPB3
+222    Class /Script/Engine.DecalComponent
+        e.g. DecalComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.Decal_TPB3.NewDecalComponent
+1      Class /Script/Engine.DefaultPhysicsVolume
+        e.g. DefaultPhysicsVolume /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.DefaultPhysicsVolume_2147478005
+1      Class /Script/Engine.DirectionalLight
+        e.g. DirectionalLight /Game/Levels/Test/Circleroom_light.Circleroom_light:PersistentLevel.DirectionalLight_0
+10     Class /Script/Engine.DirectionalLightComponent
+        e.g. DirectionalLightComponent /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.SettingCom_2.DirectionalLight
+1      Class /Script/Engine.Emitter
+        e.g. Emitter /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.P_holographic_Light_01_2
+1      Class /Script/Engine.ExponentialHeightFog
+        e.g. ExponentialHeightFog /Game/Levels/CircleRoom/Env.Env:PersistentLevel.ExponentialHeightFog_0
+2      Class /Script/Engine.ExponentialHeightFogComponent
+        e.g. ExponentialHeightFogComponent /Game/Levels/CircleRoom/Env.Env:PersistentLevel.ExponentialHeightFog_0.HeightFogComponent0
+1      Class /Script/Engine.GameNetworkManager
+        e.g. GameNetworkManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.GameNetworkManager_2147477868
+9      Class /Script/Engine.InputComponent
+        e.g. InputComponent /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.A_DummyActor_0.InputComponent_2147477832
+2      Class /Script/Engine.InstancedStaticMeshComponent
+        e.g. InstancedStaticMeshComponent /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.LabTrayA.InstancedStaticMesh
+8      Class /Script/Engine.LineBatchComponent
+        e.g. LineBatchComponent /Engine/Transient.LineBatchComponent_2147477879
+1      Class /Script/Engine.ParticleEventManager
+        e.g. ParticleEventManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.ParticleEventManager_2147477871
+22     Class /Script/Engine.ParticleSystemComponent
+        e.g. ParticleSystemComponent /Game/Levels/CircleRoom/Bridge1.Bridge1:PersistentLevel.P_holographic_Light_01_2.ParticleSystemComponent0
+2      Class /Script/Engine.PhysicsFieldComponent
+        e.g. PhysicsFieldComponent /Engine/Transient.PhysicsFieldComponent_2147477875
+1      Class /Script/Engine.PlayerCameraManager
+        e.g. PlayerCameraManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.PlayerCameraManager_2147477854
+10     Class /Script/Engine.PlayerStart
+        e.g. PlayerStart /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.PlayerStart10
+31     Class /Script/Engine.PointLight
+        e.g. PointLight /Game/Levels/Test/Circleroom_light.Circleroom_light:PersistentLevel.PointLight13_0
+142    Class /Script/Engine.PointLightComponent
+        e.g. PointLightComponent /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.BP_Security_Flashing_Alarm2.OffLight
+2      Class /Script/Engine.PostProcessComponent
+        e.g. PostProcessComponent /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.SettingCom_2.PostProcess
+4      Class /Script/Engine.PostProcessVolume
+        e.g. PostProcessVolume /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.OutLine_Avatar
+8      Class /Script/Engine.RectLight
+        e.g. RectLight /Game/Levels/Test/Circleroom_light.Circleroom_light:PersistentLevel.RectLight26_1
+18     Class /Script/Engine.RectLightComponent
+        e.g. RectLightComponent /Game/Levels/Test/Circleroom_light.Circleroom_light:PersistentLevel.RectLight26_1.LightComponent0
+4      Class /Script/Engine.SceneCaptureComponent2D
+        e.g. SceneCaptureComponent2D /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_Card3D_2147477586.SceneCaptureComponent2D
+448    Class /Script/Engine.SceneComponent
+        e.g. SceneComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.SelectModeActor_C_0.DefaultSceneRoot
+1      Class /Script/Engine.SkeletalMeshActor
+        e.g. SkeletalMeshActor /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.Sm_Laser_7
+314    Class /Script/Engine.SkeletalMeshComponent
+        e.g. SkeletalMeshComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.StaticMesh_workshoparm_Blueprint_C_1.Mesh_WorkshopArm
+1      Class /Script/Engine.SkyLight
+        e.g. SkyLight /Game/Levels/Test/Circleroom_light.Circleroom_light:PersistentLevel.SkyLight_0
+4      Class /Script/Engine.SkyLightComponent
+        e.g. SkyLightComponent /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.SettingCom_2.SkyLight
+12     Class /Script/Engine.SphereComponent
+        e.g. SphereComponent /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.A_DummyActor_0.Sphere_FB
+17     Class /Script/Engine.SpotLight
+        e.g. SpotLight /Game/Levels/Test/Circleroom_light.Circleroom_light:PersistentLevel.SpotLight12_0
+60     Class /Script/Engine.SpotLightComponent
+        e.g. SpotLightComponent /Game/Levels/CircleRoom/Room_Channel.Room_Channel:PersistentLevel.BP_Security_Flashing_Alarm2.SpotLight
+4      Class /Script/Engine.SpringArmComponent
+        e.g. SpringArmComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_FreeCameraPawn_2147477713.SpringArm
+236    Class /Script/Engine.StaticMeshActor
+        e.g. StaticMeshActor /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.shoushutai2
+1720   Class /Script/Engine.StaticMeshComponent
+        e.g. StaticMeshComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.SelectModeActor_C_0.Cube
+10     Class /Script/Engine.TextRenderComponent
+        e.g. TextRenderComponent /Game/Core/Map/Sub/CircleRoomMisc.CircleRoomMisc:PersistentLevel.Box_10.TextRender
+39     Class /Script/Engine.TimelineComponent
+        e.g. TimelineComponent /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.BP_SlidingDoor_C_0.CloseDoor
+10     Class /Script/Engine.WorldSettings
+        e.g. WorldSettings /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.WorldSettings
+11     Class /Script/EnhancedInput.EnhancedInputComponent
+        e.g. EnhancedInputComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.Room_CircleRoom_C_2.EnhancedInputComponent_2147477870
+3      Class /Script/LevelSequence.LevelSequenceActor
+        e.g. LevelSequenceActor /Game/Levels/CircleRoom/Workshop.Workshop:PersistentLevel.LevelSequenceActor_1
+1      Class /Script/NavigationSystem.AbstractNavData
+        e.g. AbstractNavData /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.AbstractNavData-Default
+1      Class /Script/Niagara.NiagaraActor
+        e.g. NiagaraActor /Game/Levels/CircleRoom/Env.Env:PersistentLevel.NiagaraActor_0
+20     Class /Script/Niagara.NiagaraComponent
+        e.g. NiagaraComponent /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.Mesh_LabContainerA2_10.NS_Bubble
+4      Class /Script/NiagaraUIRenderer.NiagaraUIActor
+        e.g. NiagaraUIActor /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.NiagaraUIActor_2147477104
+8      Class /Script/NiagaraUIRenderer.NiagaraUIComponent
+        e.g. NiagaraUIComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.NiagaraUIActor_2147477104.NiagaraUIComponent_2147477103
+38     Class /Script/PHCustomDeformer.PHCharacterMeshComponent
+        e.g. PHCharacterMeshComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_AvatarPawn_2147477848.CharacterMesh0
+2      Class /Script/PHCustomDeformer.PHClothWrapBinderComponent
+        e.g. PHClothWrapBinderComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_AvatarPawn_2147477848.ClothWrapBinder
+1      Class /Script/PHCustomDeformer.PHFatCustomizationComponent
+        e.g. PHFatCustomizationComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.AvatarPawn_C_2147474303.PHFatCustomizationComponent_2147472852
+2      Class /Script/PHCustomDeformer.PHFatLODComponent
+        e.g. PHFatLODComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_AvatarPawn_2147477848.FatLOD
+2      Class /Script/PHCustomDeformer.PHUVWaveComponent
+        e.g. PHUVWaveComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_AvatarPawn_2147477848.UVWave
+2      Class /Script/PHSurfaceStain.PHSurfaceStainComponent
+        e.g. PHSurfaceStainComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_AvatarPawn_2147477848.SurfaceStain
+2      Class /Script/Paralogue.AvatarMovementComponent
+        e.g. AvatarMovementComponent /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_AvatarPawn_2147477848.CharMoveComp
+1      Class /Script/Paralogue.InteractiveTrigger
+        e.g. InteractiveTrigger /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_RoomManager_2147477856.InteractiveTrigger
+1      Class /Script/Paralogue.SkinnedSemen
+        e.g. SkinnedSemen /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.AvatarPawn_C_2147474303.SkinnedSemen_2147472850
+1      Class /Script/Paralogue.SkinnedSemenManager
+        e.g. SkinnedSemenManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.A_RoomManager_2147477856.SkinnedSemenManager
+32     Class /Script/UMG.WidgetComponent
+        e.g. WidgetComponent /Game/Levels/CircleRoom/Lab.Lab:PersistentLevel.VR_ClickComp_VR_Actor_Click_C_CAT_0.Widget
+1      Class /Script/Water.BuoyancyManager
+        e.g. BuoyancyManager /Game/Core/Map/Room_CircleRoom.Room_CircleRoom:PersistentLevel.BuoyancyManager_2147478017

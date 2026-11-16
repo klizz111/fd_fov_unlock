@@ -1,0 +1,41 @@
+# ---- 本机私有配置（含你自己的游戏路径）
+config.json
+
+# ---- 第三方二进制：从 UE4SS release 自行下载，不入库
+stage/
+downloads/*.zip
+downloads/*.7z
+
+# ---- 运行期产物
+tools/__pycache__/
+__pycache__/
+*.pyc
+tools/fov_target.txt
+analysis/*.bin
+analysis/*.dmp
+analysis/panel_log.txt
+analysis/hk*.txt
+*.log
+
+# ---- 逆向过程中的临时/派生数据（体积大且可复现）
+analysis/exe_identifiers.txt
+analysis/exe_camera_names.txt
+
+# ---- 游戏侧文件（如果有人把 kit 复制进游戏目录后在那跑 git）
+Paralogue/
+Engine/
+Content/
+*.pak
+*.utoc
+*.ucas
+*.exe
+*.dll
+
+# ---- 编辑器/系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# ---- 逆向过程目录整体不入库（派生数据，可由工具重建）
+analysis/
